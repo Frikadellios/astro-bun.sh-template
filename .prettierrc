@@ -1,0 +1,23 @@
+{
+  "extends": ["prettier"],
+  "plugins": [
+    "prettier",
+    "prettier-plugin-astro",
+    "prettier-plugin-tailwindcss",
+    "prettier-plugin-astro-organize-imports"
+  ],
+  "pluginSearchDirs": false,
+  "rules": {
+    "prettier/prettier": "error",
+    "arrow-body-style": "off",
+    "prefer-arrow-callback": "off"
+  },
+  "overrides": [
+    {
+      "files": "*.astro",
+      "options": {
+        "parser": "astro"
+      }
+    }
+  ]
+}

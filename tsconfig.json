@@ -1,0 +1,37 @@
+{
+  "extends": "astro/tsconfigs/strict",
+  "compilerOptions": {
+    "importHelpers": true,
+    "verbatimModuleSyntax": false,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"],
+      "data": ["./data.ts"],
+    },
+    "types": [
+      "bun-types"
+    ],
+    "lib": [
+      "esnext"
+    ],
+    "module": "esnext",
+    "target": "esnext",
+    "moduleResolution": "bundler",
+    "noEmit": true,
+    "allowImportingTsExtensions": true,
+    "moduleDetection": "force",
+    "jsx": "preserve",
+    "allowJs": true,
+    "esModuleInterop": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true,
+    "strictNullChecks": true,
+    "jsxImportSource": "solid-js",
+    "plugins": [
+      {
+        "name": "@astrojs/ts-plugin"
+      }
+    ],
+  },
+}
